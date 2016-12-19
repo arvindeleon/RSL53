@@ -73,11 +73,11 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="content" id="app">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel @{{msg}}
                 </div>
-
+                <example></example>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
@@ -87,5 +87,6 @@
                 </div>
             </div>
         </div>
+        <script src="{{ elixir('js/app.js') }}"></script>
     </body>
 </html>
