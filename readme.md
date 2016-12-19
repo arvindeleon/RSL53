@@ -1,7 +1,6 @@
 # Rubric System
 
 Built with Laravel 5.3
-Demo by: Arvin Shelby de Leon
 
 ## Security Vulnerabilities
 
