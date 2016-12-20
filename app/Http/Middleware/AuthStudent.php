@@ -15,10 +15,10 @@ class AuthStudent
      */
     public function handle($request, Closure $next)
     {
-        if($request->user()->type != 'st')
+        if(Auth::user()->id === $request->id || Auth::user()->checkRole() == 'su' || Auth::user()->checkRole() == 'tc' )
         {
-            return Redirect::route('student.login');
+            return $next($request);
         }
-        return $next($request);
+        abort(403);
     }
 }

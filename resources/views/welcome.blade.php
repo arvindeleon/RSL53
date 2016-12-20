@@ -87,6 +87,8 @@
                 </div>
             </div>
         </div>
-        <script src="{{ elixir('js/app.js') }}"></script>
+        <script src="{{ elixir('js/general.js') }}"></script>
+        <script src="{{ elixir('js/frontend.js') }}"></script>
+        <script src="{{ elixir('js/backend.js') }}"></script>
     </body>
 </html>

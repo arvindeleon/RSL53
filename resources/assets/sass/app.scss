@@ -8,3 +8,18 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+.navbar { 
+	background-color : $pcolor $i;
+	a {
+		color : $white $i;
+	}
+	.active a{
+		background-color : $pdcolor $i;
+	}
+	.container {
+		color : $white $i;
+	}
+	.footer {
+		padding : $tw;
+	}
+}

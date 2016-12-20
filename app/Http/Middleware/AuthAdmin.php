@@ -20,6 +20,6 @@ class AuthAdmin
         {
             return $next($request);
         }
-        return redirect('/login');
+        abort(403);
     }
 }

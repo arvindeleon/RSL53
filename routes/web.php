@@ -12,13 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.frontend.index');
+});
+Route::get('/backend', function () {
+    return view('pages.backend.index');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@index')->middleware('auth.admin');
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'auth.admin']] ,function() {
 	Route::get('/', 'AdminController@index');
+});
+Route::group(['prefix' => 'teacher', 'middleware' => ['auth', 'auth.teacher']], function(){
+
+});
+Route::group(['prefix' => 'student', 'middleware' => ['auth', 'auth.student']], function(){
+	
 });

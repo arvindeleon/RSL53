@@ -15,10 +15,10 @@ class AuthTeacher
      */
     public function handle($request, Closure $next)
     {
-        if($request->user()->type != 'tc')
+        if(Auth::user()->id === $request->id && Auth::user()->checkRole() == 'tc')
         {
-            return Redirect::route('teacher.login');
+            return $next($request);
         }
-        return $next($request);
+        abort(403);
     }
 }
