@@ -1,2 +1,7 @@
+#footer-bottom ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
 
 /*# sourceMappingURL=frontend.css.map */
