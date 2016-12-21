@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 Route::get('/backend', function () {
     return view('pages.backend.index');
-});
+})->middleware('auth');
 
 Auth::routes();
 

@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ elixir('css/general.css') }}">
         <link rel="stylesheet" href="{{ elixir('css/frontend.css') }}">
+        <link rel="stylesheet" href="/css/admin.css">
+        <link rel="stylesheet" href="/css/clean.min.css">
+        <link rel="stylesheet" href="/css/widgets.min.css">
         @yield('head_script')
   </head>
   <body>
@@ -20,6 +23,9 @@
       </div>
     @include('layouts.includes.frontend.footer')
     <script src="{{ elixir('js/general.js') }}"></script>
+    <script src="/js/admin.js"></script>
+    <script src="/js/datatables.min.js"></script>
+    <script src="/js/dropzone.js"></script>
     <script src="{{ elixir('js/frontend.js') }}"></script>
     @yield('footer_script')
   </body>

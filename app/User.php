@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'type',
+        'name', 'email', 'password', 'type', 'active', 'first_time',
     ];
 
     /**
@@ -27,6 +27,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    protected $casts = [
+        'active' => 'bollean',
+        'first_time' => 'boolean',
+    ];
+
     public function checkRole()
     {
         return $this->type;
@@ -36,6 +41,10 @@ class User extends Authenticatable
     {
         return $this->active;
     }
-    
-
+ 
+    public function isFirst()
+    {
+        return $this->first_time;
+    }
+       
 }

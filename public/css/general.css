@@ -7688,24 +7688,4 @@ button.close {
   }
 }
 
-.navbar {
-  background-color: #3C3176 !important;
-}
-
-.navbar a {
-  color: #fdfdfd !important;
-}
-
-.navbar .active a {
-  background-color: #2a2252 !important;
-}
-
-.navbar .container {
-  color: #fdfdfd !important;
-}
-
-.navbar .footer {
-  padding: 20px;
-}
-
 /*# sourceMappingURL=general.css.map */

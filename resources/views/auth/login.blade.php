@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.frontend')
 
 @section('content')
 <div class="container">
@@ -11,7 +11,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
-                            <label for=""ext class="col-md-4 control-label">E-Mail Address</label>
+                            <label for=""ext class="col-md-4 control-label">Username</label>
 
                             <div class="col-md-6">
                                 <input id="username" type="text" class="form-control" name="username" value="{{ old('username') }}" required autofocus>

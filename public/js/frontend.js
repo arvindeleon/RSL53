@@ -68,7 +68,7 @@
 /* 0 */
 /***/ function(module, exports) {
 
-eval("$(document).ready(function(){\r\n\tconsole.log('frontend ready!');\r\n});//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9yZXNvdXJjZXMvYXNzZXRzL2pzL2Zyb250ZW5kLmpzP2ZlZTIiXSwic291cmNlc0NvbnRlbnQiOlsiJChkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24oKXtcclxuXHRjb25zb2xlLmxvZygnZnJvbnRlbmQgcmVhZHkhJyk7XHJcbn0pO1xuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyByZXNvdXJjZXMvYXNzZXRzL2pzL2Zyb250ZW5kLmpzIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=");
+eval("$(function() {\r\n\t$('#footer-bottom').pxFooter();\r\n});\r\n$(document).ready(function(){\r\n\tconsole.log('frontend ready!');\r\n});//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9yZXNvdXJjZXMvYXNzZXRzL2pzL2Zyb250ZW5kLmpzP2ZlZTIiXSwic291cmNlc0NvbnRlbnQiOlsiJChmdW5jdGlvbigpIHtcclxuXHQkKCcjZm9vdGVyLWJvdHRvbScpLnB4Rm9vdGVyKCk7XHJcbn0pO1xyXG4kKGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpe1xyXG5cdGNvbnNvbGUubG9nKCdmcm9udGVuZCByZWFkeSEnKTtcclxufSk7XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIHJlc291cmNlcy9hc3NldHMvanMvZnJvbnRlbmQuanMiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==");
 
 /***/ }
 /******/ ]);
