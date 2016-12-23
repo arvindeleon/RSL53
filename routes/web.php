@@ -10,10 +10,12 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+Route::get('/setupwizard', function(){
+	return view('includes.first_wizard');
+})->middleware('auth');
 Route::get('/', function () {
     return view('pages.frontend.index');
-});
+})->middleware('auth', 'auth.first');
 Route::get('/backend', function () {
     return view('pages.backend.index');
 })->middleware('auth');
@@ -28,6 +30,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'auth.admin']] ,func
 Route::group(['prefix' => 'teacher', 'middleware' => ['auth', 'auth.teacher']], function(){
 
 });
-Route::group(['prefix' => 'student', 'middleware' => ['auth', 'auth.student']], function(){
+Route::group(['prefix' => 'student', 'middleware' => ['auth', 'auth.student', 'auth.first']], function(){
 	
 });

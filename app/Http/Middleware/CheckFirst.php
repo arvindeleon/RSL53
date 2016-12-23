@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use Auth;
 use Closure;
 
 class CheckFirst
@@ -15,6 +16,9 @@ class CheckFirst
      */
     public function handle($request, Closure $next)
     {
+        if(Auth::check() && Auth::user()->isFirst()) {
+            return redirect('/setupwizard');
+        }
         return $next($request);
     }
 }
